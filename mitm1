@@ -1,0 +1,6 @@
+Open Vpn connection, check ip adress
+start mitmproxy(terminal: mitmproxy)
+BCU: Connect to 192.168.7.46:8080
+inspect requests in mitmproxy
+POST http://mitm1.adriaan.haxx.be/index.php
+FLAG_bFJJhrvObybY8M6l3FOuXoFnlsxAWTEQ:

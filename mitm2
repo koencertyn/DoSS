@@ -1,0 +1,18 @@
+connect to vpn, Check ipadress
+start mitmproxy
+use BCU to go to 192.168.7.46:8080
+Check output mitmproxy:
+
+   GET http://mitm2.adriaan.haxx.be/
+       ← 301 text/html 324B 382.05kB/s
+   GET https://mitm2.adriaan.haxx.be/
+       ← 200 text/html 315B 669.89kB/s
+   GET https://mitm2.adriaan.haxx.be/style.css
+       ← 200 text/css 2.15kB 2.73MB/s
+   GET https://mitm2.adriaan.haxx.be/bassie.png
+       ← 200 image/png 21.09kB 1.67MB/s
+   GET https://mitm2.adriaan.haxx.be/adriaan.png
+       ← 200 image/png 14.35kB 16.05MB/s
+   GET https://mitm2.adriaan.haxx.be/?secret=FLAG_x8ZMtNCXewwqZ8qmsSsxWtN3dwpDBNlE
+       ← 200 text/html 315B 541.59kB/s
+

